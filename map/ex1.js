@@ -22,8 +22,8 @@ En sortie: [
  */
 
 function getStringsLength(strings) {
-        const map1 = strings.map(x => x.length);
-        return map1
+  return strings.map(x =>`${x} contains ${x.length} characters`);
+ 
 }
 console.log(getStringsLength(['Cat', 'Lion', 'Tiger', 'Jaguar', 'Leopard']));
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,

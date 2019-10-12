@@ -59,7 +59,17 @@ En sortie:
 
  */
 
-function getMoviesFreshness(movies) {
+function getMoviesFreshness(movies){
+  return movies.map(x => {
+    if (x.rating < 60 ){ 
+      return `${x.label} `
+     }
+    else {
+     return `${x.label} `;
+    }
+  });  
+   }
+ 
 }
 
 
