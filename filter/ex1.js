@@ -10,8 +10,12 @@ Sortie attendue:
   [7, 2, 0, 3, 11]
 
  */
+let numbers = [7, -4, 2, 0, -10, 3, 11]
+
 
 function getPositiveNumbers(numbers) {
+   let result = numbers.filter(x => x >= 0  )   
+   return result; 
 }
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,

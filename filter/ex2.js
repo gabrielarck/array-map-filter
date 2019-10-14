@@ -22,9 +22,19 @@ Sortie attendue:
   ['Bran Stark', 'Arya Stark', 'Sansa Stark']
 
  */
+let names = [ 'Bran Stark',
+'Cersei Lannister',
+'Sandor Clegane',
+'Arya Stark',
+'Yara Greyjoy',
+'Sansa Stark']
 
 function keepStarks(names) {
+  let result = names.filter(x => x.endsWith('Stark'))
+  console.log(result)
+  return result;
 }
+keepStarks(names)
 
 // Ne pas modifier l'export
 module.exports = keepStarks;
