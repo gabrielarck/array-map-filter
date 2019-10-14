@@ -27,9 +27,20 @@ Sortie attendue:
     { name: 'Huawei P20', price: 480 }
   ]
  */
+let products = [
+  { name: 'iPhone X', price: 1159 },
+  { name: 'Xiaomi Mi A2', price: 209 },
+  { name: 'Samsung Galaxy Note 9', price: 992 },
+  { name: 'Huawei P20', price: 480 },
+  { name: 'Huawei P20 Pro', price: 649 }
+]
+let maxPrice = 500
 
 function filterOnPrice(products, maxPrice) {
+  let result = products.filter(x => x.price <= maxPrice)
+  console.log(result)
+  return result;
 }
-
+filterOnPrice(products, maxPrice)
 // Ne pas modifier l'export
 module.exports = filterOnPrice;
