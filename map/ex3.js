@@ -58,7 +58,7 @@ En sortie:
   ]
 
  */
-let movies = [
+/*let movies = [
   {
     name: 'Crazy Rich Asians',
     rating: 93
@@ -75,10 +75,10 @@ let movies = [
     name: 'White Boy Rick',
     rating: 60
   }
-]
+]*/
 
 function getMoviesFreshness(movies){
-  return  movies.map(x => {
+    movies.map(x => {
     if (x.rating > 75 ){
     x.label="certified fresh"
     console.log(x)
@@ -86,7 +86,7 @@ function getMoviesFreshness(movies){
     }else if (x.rating <60 ){
       x.label="rotten"
       console.log(x)
-    }else if ( 60 < x.rating <= 70 ){
+    }else if ( 75 >= x.rating > 60  ){
       x.label="fresh"
       console.log(x)
     }else{
@@ -94,7 +94,7 @@ function getMoviesFreshness(movies){
       console.log(x)
       
     }
-    
+    return x
   }) ;
   
   
